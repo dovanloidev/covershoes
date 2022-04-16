@@ -8,6 +8,7 @@ export const SHOES_DATA = [
     author: "Man's  Shoes",
     price: '$350.000',
     picture: IMAGES.shoes1,
+    bgColor: COLORS.purple,
     colors: [COLORS.black, COLORS.orange, COLORS.green],
   },
   {
@@ -16,6 +17,7 @@ export const SHOES_DATA = [
     author: "Man's  Shoes",
     price: '$350.000',
     picture: IMAGES.shoes2,
+    bgColor: COLORS.orangeLight,
     colors: [COLORS.black, COLORS.orange, COLORS.green],
   },
   {
@@ -24,6 +26,7 @@ export const SHOES_DATA = [
     author: "Man's  Shoes",
     price: '$350.000',
     picture: IMAGES.shoes3,
+    bgColor: COLORS.pinkLight,
     colors: [COLORS.black, COLORS.orange, COLORS.green],
   },
 ];

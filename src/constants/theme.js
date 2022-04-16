@@ -1,12 +1,18 @@
 export const COLORS = {
   primary: '#54CFE2',
   white: '#FFFFFF',
-  black: '#10033D',
+  black: 'rgba(0, 0, 0, 0.3)',
   green: '#72FF77',
   orange: '#FF6D3F',
-  purple: '#906BB0',
+  purple: 'rgba(144, 107, 176, 0.4)',
   gray: '#C8C8C8',
   textGray: '#B9B9B9',
+  pinkLight: '#F5F1FF',
+  primaryLight: '#E2FBFF',
+  transparent: 'transparent',
+  blackLight: '#4F4F4F',
+  orangeLight: '#FFF8F3',
+  textGrey: '#A3A3A3',
 };
 
 export const SPACINGS = {

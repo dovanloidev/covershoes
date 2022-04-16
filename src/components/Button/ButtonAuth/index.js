@@ -8,6 +8,9 @@ const ButtonAuth = ({
   style,
   titleProps,
   onPress,
+  marginTop,
+  height = 60,
+  width = '100%',
 }) => {
   const getStyleByVariant = () => {
     if (variant === 'outline') {
@@ -23,7 +26,14 @@ const ButtonAuth = ({
     }
   };
 
-  const buttonStyles = [styles.container, getStyleByVariant().container, style];
+  const buttonStyles = [
+    styles.container,
+    getStyleByVariant().container,
+    style,
+    {height},
+    {width},
+    marginTop !== undefined && {marginTop},
+  ];
 
   const txtStyles = [
     styles.txt,
@@ -44,8 +54,6 @@ export default ButtonAuth;
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: SPACINGS.full,

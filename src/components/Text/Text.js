@@ -12,6 +12,9 @@ const Text = ({
   size,
   weight,
   color,
+  lineHeight,
+  marginTop,
+  marginHorizontal,
   children,
 }) => {
   const textStyle = [
@@ -24,6 +27,9 @@ const Text = ({
     size !== undefined && {fontSize: size},
     weight !== undefined && {fontWeight: weight},
     color !== undefined && {color},
+    lineHeight !== undefined && {lineHeight},
+    marginTop !== undefined && {marginTop},
+    marginHorizontal !== undefined && {marginHorizontal},
     style,
   ];
 
@@ -46,7 +52,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   h4: {
-    fontWeight: '600',
+    fontWeight: '500',
     fontSize: 27,
   },
   h5: {

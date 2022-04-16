@@ -1,14 +1,13 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 import {ButtonAuth, Text} from './components';
-
+import {Home} from './screens';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 const App = () => {
   return (
-    <View style={styles.container}>
-      <ButtonAuth>Sign Up</ButtonAuth>
-      <ButtonAuth variant="outline">Sign Up</ButtonAuth>
-      <Text h1>Sign Up</Text>
-    </View>
+    <SafeAreaProvider>
+      <Home />
+    </SafeAreaProvider>
   );
 };
 
