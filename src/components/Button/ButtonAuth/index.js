@@ -23,22 +23,19 @@ const ButtonAuth = ({
     }
   };
 
+  const buttonStyles = [styles.container, getStyleByVariant().container, style];
+
+  const txtStyles = [
+    styles.txt,
+    getStyleByVariant().txt,
+    titleProps?.style !== undefined && titleProps?.style,
+  ];
+
   return (
     <TouchableOpacity
-      style={StyleSheet.flatten([
-        styles.container,
-        getStyleByVariant().container,
-        style,
-      ])}
+      style={StyleSheet.flatten([buttonStyles])}
       onPress={onPress}>
-      <Text
-        style={StyleSheet.flatten([
-          styles.txt,
-          getStyleByVariant().txt,
-          titleProps?.style,
-        ])}>
-        {children}
-      </Text>
+      <Text style={StyleSheet.flatten([txtStyles])}>{children}</Text>
     </TouchableOpacity>
   );
 };
