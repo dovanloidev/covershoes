@@ -13,6 +13,7 @@ export const COLORS = {
   blackLight: '#4F4F4F',
   orangeLight: '#FFF8F3',
   textGrey: '#A3A3A3',
+  redLight: 'rgba(255, 61, 0, 0.2)',
 };
 
 export const SPACINGS = {

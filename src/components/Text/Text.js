@@ -15,6 +15,7 @@ const Text = ({
   lineHeight,
   marginTop,
   marginHorizontal,
+  marginVertical,
   children,
 }) => {
   const textStyle = [
@@ -30,6 +31,7 @@ const Text = ({
     lineHeight !== undefined && {lineHeight},
     marginTop !== undefined && {marginTop},
     marginHorizontal !== undefined && {marginHorizontal},
+    marginVertical !== undefined && {marginVertical},
     style,
   ];
 
