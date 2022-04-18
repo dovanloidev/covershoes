@@ -18,6 +18,7 @@ const Text = ({
   marginHorizontal,
   marginVertical,
   flex,
+  textAlign,
   children,
 }) => {
   const textStyle = [
@@ -36,6 +37,7 @@ const Text = ({
     marginHorizontal !== undefined && {marginHorizontal},
     marginVertical !== undefined && {marginVertical},
     flex !== undefined && {flex},
+    textAlign !== undefined && {textAlign},
     style,
   ];
 
