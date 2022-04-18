@@ -4,7 +4,7 @@ export const COLORS = {
   black: 'rgba(0, 0, 0, 0.3)',
   green: '#72FF77',
   orange: '#FF6D3F',
-  purple: 'rgba(144, 107, 176, 0.4)',
+  purple: 'rgba(144, 107, 176, 0.3)',
   gray: '#C8C8C8',
   textGray: '#B9B9B9',
   pinkLight: '#F5F1FF',
