@@ -1,4 +1,4 @@
-import {IMAGES} from './shared';
+import {ICONS, IMAGES} from './shared';
 import {COLORS} from './theme';
 
 export const SHOES_DATA = [
@@ -85,5 +85,20 @@ export const SIZES_DATA = [
   {
     id: '5',
     title: '12',
+  },
+];
+
+export const PAYMENT_DATA = [
+  {
+    id: '1',
+    title: 'Master Card',
+    icon: ICONS.master_card,
+    isSelect: true,
+  },
+  {
+    id: '2',
+    title: 'Visa',
+    icon: ICONS.visa,
+    isSelect: false,
   },
 ];

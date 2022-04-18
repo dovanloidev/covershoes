@@ -14,8 +14,10 @@ const Text = ({
   color,
   lineHeight,
   marginTop,
+  marginBottom,
   marginHorizontal,
   marginVertical,
+  flex,
   children,
 }) => {
   const textStyle = [
@@ -30,8 +32,10 @@ const Text = ({
     color !== undefined && {color},
     lineHeight !== undefined && {lineHeight},
     marginTop !== undefined && {marginTop},
+    marginBottom !== undefined && {marginBottom},
     marginHorizontal !== undefined && {marginHorizontal},
     marginVertical !== undefined && {marginVertical},
+    flex !== undefined && {flex},
     style,
   ];
 

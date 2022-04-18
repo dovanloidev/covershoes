@@ -14,6 +14,7 @@ export const COLORS = {
   orangeLight: '#FFF8F3',
   textGrey: '#A3A3A3',
   redLight: 'rgba(255, 61, 0, 0.2)',
+  smoke: '#F3F3F3',
 };
 
 export const SPACINGS = {
