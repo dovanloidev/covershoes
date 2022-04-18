@@ -3,7 +3,11 @@ import {ImageBackground, StyleSheet, View} from 'react-native';
 import {COLORS, IMAGES, SPACINGS} from '../../constants';
 import {ButtonAuth, Text} from '../../components';
 
-const DashBoard = () => {
+const DashBoard = ({navigation}) => {
+  const onMoveHome = () => {
+    navigation.navigate('TabStack');
+  };
+
   return (
     <ImageBackground style={styles.container} source={IMAGES.background_login}>
       <View style={styles.content}>
@@ -17,8 +21,13 @@ const DashBoard = () => {
           marginTop={SPACINGS.lg}>
           Appear more confident with the{'\n'}best shoes with elegant designs
         </Text>
-        <ButtonAuth marginTop={200}>Sign up</ButtonAuth>
-        <ButtonAuth marginTop={SPACINGS.lg} variant="outline">
+        <ButtonAuth marginTop={200} onPress={onMoveHome}>
+          Sign up
+        </ButtonAuth>
+        <ButtonAuth
+          marginTop={SPACINGS.lg}
+          variant="outline"
+          onPress={onMoveHome}>
           Sign in
         </ButtonAuth>
       </View>

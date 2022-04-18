@@ -6,7 +6,7 @@ import {COLORS, FONTS, SHOES_DATA, SIZES_DATA, SPACINGS} from '../../constants';
 import {AirbnbRating} from '@rneui/themed';
 import {Button} from '@rneui/base';
 
-const ProductDetail = () => {
+const ProductDetail = ({navigation}) => {
   const shoes = SHOES_DATA[0];
 
   return (
@@ -89,7 +89,7 @@ const ProductDetail = () => {
                     height: 50,
                     borderRadius: SPACINGS.md,
                     backgroundColor:
-                      el.id === '1' ? COLORS.primary : COLORS.gray,
+                      el.id === '1' ? COLORS.primary : COLORS.white,
                     marginLeft: el.id === '1' ? 0 : SPACINGS.md,
                   }}
                   titleStyle={{
@@ -127,6 +127,7 @@ const ProductDetail = () => {
             borderRadius: SPACINGS.md,
             backgroundColor: COLORS.primary,
           }}
+          onPress={() => navigation.navigate('Cart')}
         />
       </View>
     </View>

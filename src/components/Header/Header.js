@@ -2,20 +2,22 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {FONTS, ICONS, SPACINGS} from '../../constants';
+import {useNavigation} from '@react-navigation/native';
 
 const Header = ({children, hasIconRight = true}) => {
   const insets = useSafeAreaInsets();
+  const {goBack} = useNavigation();
 
   return (
     <View style={{...styles.headerWrap, paddingTop: insets.top + SPACINGS.md}}>
-      <TouchableOpacity>
-        <Image style={styles.headerIcon} source={ICONS.back} />
-      </TouchableOpacity>
       {children && (
         <View style={{...styles.content, paddingTop: insets.top + SPACINGS.md}}>
           <Text style={styles.title}>{children}</Text>
         </View>
       )}
+      <TouchableOpacity onPress={goBack}>
+        <Image style={styles.headerIcon} source={ICONS.back} />
+      </TouchableOpacity>
       {hasIconRight && (
         <TouchableOpacity>
           <Image style={styles.headerIcon} source={ICONS.options} />

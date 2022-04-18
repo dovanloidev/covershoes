@@ -12,7 +12,7 @@ import {COLORS, FONTS, ICONS, PAYMENT_DATA, SPACINGS} from '../../constants';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {Button} from '@rneui/base';
 
-const Payment = () => {
+const Payment = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Header hasIconRight={false}>Checkout</Header>
@@ -124,6 +124,7 @@ const Payment = () => {
             borderRadius: SPACINGS.md,
             height: 52,
           }}
+          onPress={() => navigation.navigate('PaymentSuccess')}
         />
       </View>
     </View>
@@ -135,6 +136,7 @@ export default Payment;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: COLORS.white,
   },
   paymentList: {
     padding: SPACINGS.xxxl,

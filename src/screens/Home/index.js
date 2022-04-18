@@ -83,7 +83,8 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingBottom: 100,
+    paddingBottom: 50,
+    backgroundColor: COLORS.white,
   },
   background: {
     position: 'absolute',

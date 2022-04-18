@@ -6,11 +6,14 @@ import {Text} from '../../Text';
 const CategoryItem = ({category}) => {
   const {title, id} = category || {};
 
-  const backgroundColor = id === '1' ? COLORS.primary : COLORS.textGray;
+  const backgroundColor = id === '1' ? COLORS.primary : COLORS.smoke;
+  const color = id === '1' ? COLORS.white : COLORS.textGray;
 
   return (
     <TouchableOpacity style={{...styles.container, backgroundColor}}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title} color={color}>
+        {title}
+      </Text>
     </TouchableOpacity>
   );
 };
@@ -25,8 +28,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginLeft: SPACINGS.lg,
     borderRadius: SPACINGS.md,
-  },
-  title: {
-    color: COLORS.white,
   },
 });

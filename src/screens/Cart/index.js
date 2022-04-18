@@ -7,7 +7,7 @@ import {COLORS, FONTS, SHOES_DATA, SPACINGS} from '../../constants';
 import {Button} from '@rneui/base';
 import {Image} from 'react-native';
 
-const Cart = () => {
+const Cart = ({navigation}) => {
   const _renderItem = (data, rowMap) => {
     const {picture, title, price} = data.item || {};
 
@@ -154,6 +154,7 @@ const Cart = () => {
           borderRadius: SPACINGS.md,
           height: 52,
         }}
+        onPress={() => navigation.navigate('Payment')}
       />
     </View>
   );
@@ -164,6 +165,7 @@ export default Cart;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: COLORS.white,
   },
   hiddenWrap: {
     flex: 1,
